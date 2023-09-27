@@ -197,3 +197,9 @@ to this section's matching END comment to see page-specific styles.
   .ciphered{
     font-family: wingdings, comic-sans;
   }
+  /*lets have a flex box thing here*/
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    

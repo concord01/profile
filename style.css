@@ -194,6 +194,6 @@ to this section's matching END comment to see page-specific styles.
     border-bottom:3px solid var(--color-secondary);
   }
   /*gonna start importing fonts here */
-  .crazy{
+  .ciphered{
     font-family: wingdings, comic-sans;
   }

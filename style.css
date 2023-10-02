@@ -194,8 +194,12 @@ to this section's matching END comment to see page-specific styles.
     border-bottom:3px solid var(--color-secondary);
   }
   /*gonna start importing fonts here */
+  @font-face {
+    font-family: wingdings;
+    src: url(Wingding.ttf);
+  }
   .ciphered{
-    font-family: wingdings, comic-sans;
+    
   }
   /*lets have a flex box thing here*/
   .flex-container {

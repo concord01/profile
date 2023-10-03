@@ -199,7 +199,7 @@ to this section's matching END comment to see page-specific styles.
     src: url(Wingding.ttf);
   }
   .ciphered{
-    
+    font-family: wingdings;
   }
   /*lets have a flex box thing here*/
   .flex-container {

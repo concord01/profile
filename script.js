@@ -93,30 +93,40 @@ let stolenItems = [
 // Given an object of the stolen items for a household, return the total amount of items stolen (number). If nothing was robbed, return the string "Lucky you!”.
 
 function houseTotal(obj) {
-for(i=0;i<obj.length;i++){
-  stolenItems[i]
-}
+  var houseStolenTotal=0;
+houseStolenTotal=obj.socks+obj.spoons+obj.nutella_jar+obj.keys+obj.rotisserie_chicken+obj.shoelaces;
 
-return 
 
+if(houseStolenTotal==0){
+return "Lucky You!";
 }
-// uncomment these out to test it out
-//console.log(houseTotal(stolenItems[0])); 
-//console.log(houseTotal(stolenItems[1]));
-//console.log(houseTotal(stolenItems[2])); 
+else{
+  return "Total amount of stolen items is "+houseStolenTotal;
+}
+}
+//uncomment these out to test it out
+// console.log(houseTotal(stolenItems[0])); 
+// console.log(houseTotal(stolenItems[1]));
+// console.log(houseTotal(stolenItems[2])); 
  
 // PROBLEM TWO
 // Given an object of the stolen items for a household and a string in lowercase representing a specific item, return true if that item was stolen and false if it was not. 
 
 function isStolen(obj, item) {
-
+var realItem = 0;
+if (obj.item != 0){
+  return true;
+}
+else{
+  return false;
+}
 
 
 }
 // uncomment these out to test it out
-//console.log(houseTotal(stolenItems[0], "keys")); 
-//console.log(houseTotal(stolenItems[1], "socks"));
-//console.log(houseTotal(stolenItems[2], "spoons")); 
+console.log(isStolen(stolenItems[0], "keys")); 
+console.log(isStolen(stolenItems[1], "socks"));
+console.log(isStolen(stolenItems[2], "spoons")); 
 
 
 // EXTRA CREDIT!!!!! PROBLEM THREE

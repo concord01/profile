@@ -169,6 +169,9 @@ else if(totalarr.max==shoelacetotal){
 else if(totalarr.max==chickentotal){
   return "Rotisserie chicken was the most stolen item";
 }
+else{
+  return "I guess there was a tie."
+}
 }
 
 // uncomment these out to test it out
@@ -178,4 +181,4 @@ console.log(neighborhoodTotal(stolenItems));
 
 // PROBLEM FOUR
 // Based on the item that has been stolen the most, who do you think the burglar is? (you won’t get marked down for getting the “wrong” answer - just give me a fun explanation for why you think it is who it is! 
-//I'd say it was the 
+//I'd say it was the foxes, as there was an excessive amount of socks stolen and one of them is wearing a sock as a hat.

@@ -181,4 +181,4 @@ console.log(neighborhoodTotal(stolenItems));
 
 // PROBLEM FOUR
 // Based on the item that has been stolen the most, who do you think the burglar is? (you won’t get marked down for getting the “wrong” answer - just give me a fun explanation for why you think it is who it is! 
-//I'd say it was the foxes, as there was an excessive amount of socks stolen and one of them is wearing a sock as a hat.
+//I'd say it was the foxes, as there was an excessive amount of socks stolen and one of them is wearing a sock as a mask.

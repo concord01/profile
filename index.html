@@ -71,36 +71,29 @@
           <div class = "ciphered">
             Imagine knowing wingdings, couldn't be me.
           </div>
-         <form method="post" id="sheetdb-form"
-         action="https://sheetdb.io/api/v1/mf53pd080kfgu">
-            <input type="radio" id="this" name="testInput" value="this">
-            <label for="html">This</label><br>
-            <input type="radio" id="is" name="testInput" value="is">
-            <label for="html">is</label><br>
-            <input type="radio" id="for" name="testInput" value="for">
-            <label for="html">for</label><br>
-            <input type="radio" id="aforementioned" name="testInput" value="aforementioned">
-            <label for="html">aforementioned</label><br>
-            <input type="radio" id="assignment" name="testInput" value="assignment">
-            <label for="html">assignment</label><br>
-            <label for="html">Another input</label>
-            <input type="text" id="box" name="input">
-          </form> 
-          <script>
-            var form = document.getElementById('sheetdb-form');
-            form.addEventListener("submit", e => {
-              e.preventDefault();
-              fetch(form.action, {
-                  method : "POST",
-                  body: new FormData(document.getElementById("sheetdb-form")),
-              }).then(
-                  response => response.json()
-              ).then((html) => {
-                // you can put any JS code here
-                alert('success')
-              });
+          <form method="post" id="sheetdb-form"
+          action="https://sheetdb.io/api/v1/58f61be4dda40">
+            ID: <input name="data[id]">
+            Name: <input name="data[name]">
+            Age: <input name="data[age]">
+            <button type="submit">Submit</button>
+        </form>
+        
+        <script>
+          var form = document.getElementById('sheetdb-form');
+          form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method : "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+              // you can put any JS code here
+              alert('success')
             });
-          </script>
+          });
+        </script>
         </div>
       </div>
     </div>

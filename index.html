@@ -76,9 +76,11 @@
           </h2>
           <form method="post" id="sheetdb-form"
           action="https://sheetdb.io/api/v1/mf53pd080kfgu">
-            Comment: <input name="data[comment]">
-            Name: <input name="data[name]">
-            <button type="submit">Submit</button>
+          ID: <input name="data[id]">
+          Name: <input name="data[name]">
+          Age: <input name="data[age]">
+          Comment: <input name="data[comment]">
+          <button type="submit">Submit</button>
         </form>
         
         <script>
@@ -95,6 +97,30 @@
             });
           });
         </script>
+        </div>
+        <div>
+          <h2>Comments</h2>
+          <table>
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Comment</td>
+              </tr>
+            </thead>
+            <tbody data-sheetdb-url="https://sheetdb.io/api/v1/58f61be4dda40"
+                   data-sheetdb-sort-by="age"
+                   data-sheetdb-sort-order="desc">
+              <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{age}}</td>
+                <td>{{comment}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <script src="https://sheetdb.io/handlebars.js"></script>
         </div>
       </div>
     </div>
